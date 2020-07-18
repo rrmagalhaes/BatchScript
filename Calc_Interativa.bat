@@ -64,7 +64,7 @@ echo.
 set /p "n2=Massa, agora digite o segundo numero para finalizarmos o calculo: "
 set /a conta=%n1%*%n2%
 
-echo A soma de %n1% X %n2% = %conta%
+echo A multiplicacao de %n1% X %n2% = %conta%
 set n1=0
 set n2=0
 set conta=0
@@ -72,5 +72,24 @@ echo Aperte enter para voltar ao inicio.
 pause >nul
 goto :inicio
 
+:: Calculando a Divisão
+:4
+echo Entendi, hora de multiplicar, coloque os numeros que vamos utilizar.
+echo.
+set /p "n1=Digite o primeiro numero: "
+echo.
+set /p "n2=Massa, agora digite o segundo numero para finalizarmos o calculo: "
+set /a conta=%n1%/%n2%
+set /a resto=%n1%%%n2%
 
+echo A divisao de %n1% por %n2% = %conta% e sobra %resto%
+set n1=0
+set n2=0
+set conta=0
+echo Aperte enter para voltar ao inicio.
 pause >nul
+goto :inicio
+
+:5
+msg /w * Ok, obrigado por vir ate a proxima.
+exit
