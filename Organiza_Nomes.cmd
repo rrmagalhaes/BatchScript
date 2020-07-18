@@ -12,6 +12,6 @@ set /a nascido=%ano%-%idade%-1
 
 cls
 
-echo Oi %completo% , voce tem %idade% anos e nasceu no ano de %nascido%! 
+echo Oi %completo%, voce tem %idade% anos e nasceu no ano de %nascido%! 
 
 pause >nul
