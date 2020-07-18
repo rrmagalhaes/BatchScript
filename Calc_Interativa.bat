@@ -37,7 +37,21 @@ echo Aperte enter para voltar ao inicio.
 pause >nul
 goto :inicio
 
+:: Calculando a Subtração
+:2
+echo Se e pra tirar vamos nessa, coloque os numeros que vamos subtrair.
+echo.
+set /p "n1=Digite o primeiro numero: "
+echo.
+set /p "n2=Massa, agora digite o segundo numero para finalizarmos o calculo: "
+set /a subtracao=%n1%-%n2%
 
+echo A soma de %n1% - %n2% = %subtracao%
+set n1=0
+set n2=0
+echo Aperte enter para voltar ao inicio.
+pause >nul
+goto :inicio
 
 
 pause >nul
