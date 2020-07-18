@@ -91,5 +91,5 @@ pause >nul
 goto :inicio
 
 :5
-msg /w * Ok, obrigado por vir ate a proxima.
+msg * Ok, obrigado por vir ate a proxima.
 exit
