@@ -8,10 +8,10 @@ set completo=%nome% %sobrenome%
 
 set data=%date%
 set ano=%data:~-4%
-set nascido=%ano%-%idade%
+set /a nascido=%ano%-%idade%-1
 
 cls
 
-echo Oi %completo% , voce tem %idade% anos e nasceu em %nascido% 
+echo Oi %completo% , voce tem %idade% anos e nasceu no ano de %nascido%! 
 
 pause >nul
