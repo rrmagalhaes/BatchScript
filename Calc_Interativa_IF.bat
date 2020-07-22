@@ -14,10 +14,23 @@ echo 3 - MULTIPLICA€ÇO
 echo 4 - DIVISÇO
 echo 5 - SAIR SEM FAZER CONTA
 
+:op1
+set /p "operacao=Digite o tipo da opera‡Æo vocˆ deseja realizar: "
+
+if %operacao% equ 1 (goto :1) else (goto :op2)
+:op2
+if %operacao% equ 2 (goto :2) else (goto :op3)
+:op3
+if %operacao% equ 3 (goto :3) else (goto :op4)
+:op4
+if %operacao% equ 4 (goto :4) else (goto :op5)
+:op5
+if %operacao% equ 5 (goto :5) else (goto :op1)
+
+
 echo.
 :: Defini‡Æo do operador
-choice /c "12345" /n /m "Digite sua op‡Æo>"
-goto %errorlevel%
+if 
 
 cls
 
@@ -91,5 +104,5 @@ pause >nul
 goto :inicio
 
 :5
-msg * Ok, obrigado por vir ate a proxima.
+msg * Ok, obrigado por vir at‚ a pr¢xima.
 exit
